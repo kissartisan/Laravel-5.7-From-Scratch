@@ -11,24 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    $tasks = [
-        'Read book',
-        'Wash clothes',
-        'Resume portfolio',
-        'Hello World!'
-    ];
-
-    return view('welcome', [
-        'tasks' => $tasks,
-        'heading' => request('heading')
-    ]);
-});
-
-Route::get('/about', function() {
-    return view('about');
-});
-
-Route::get('/contact', function() {
-    return view('contact');
-});
+Route::get('/', 'PageController@home');
+Route::get('/about', 'PageController@about');
+Route::get('/contact', 'PageController@contact');
