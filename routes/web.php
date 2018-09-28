@@ -12,7 +12,17 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $tasks = [
+        'Read book',
+        'Wash clothes',
+        'Resume portfolio',
+        'Hello World!'
+    ];
+
+    return view('welcome', [
+        'tasks' => $tasks,
+        'heading' => request('heading')
+    ]);
 });
 
 Route::get('/about', function() {
