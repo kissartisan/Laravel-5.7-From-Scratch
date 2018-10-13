@@ -28,4 +28,19 @@ class ProjectsController extends Controller
 
         return redirect('/projects');
     }
+
+    public function show()
+    {
+
+    }
+
+    public function edit()
+    {
+
+    }
+
+    public function test()
+    {
+
+    }
 }
