@@ -17,6 +17,7 @@ Route::get('/contact', 'PageController@contact');
 
 
 Route::resource('projects', 'ProjectsController');
+Route::resource('posts', 'PostController');
 
 // Route::get('/projects', 'ProjectsController@index');
 // Route::post('/projects', 'ProjectsController@store');
