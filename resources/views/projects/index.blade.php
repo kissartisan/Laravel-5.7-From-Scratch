@@ -3,7 +3,7 @@
 <ul>
 @foreach($projects as $project)
     <li>
-        <a href="/projects/{{ $project->getKey() }}/edit">
+        <a href="/projects/{{ $project->getKey() }}">
             {{ $project->title }}
         </a>
     </li>
