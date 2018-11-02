@@ -2,7 +2,10 @@
 
 <ul>
 @foreach($projects as $project)
-    <li>Title: {{ $project->title }}</li>
-    <li>Description: {{ $project->description }}</li>
+    <li>
+        <a href="/projects/{{ $project->getKey() }}/edit">
+            {{ $project->title }}
+        </a>
+    </li>
 @endforeach
 </ul>
