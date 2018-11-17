@@ -17,9 +17,9 @@
             <label for="description" class="label">Description</label>
 
             <div class="control">
-                <textarea required name="description" class="textarea {{ $errors->has('description') ? 'is-danger' : '' }}">
-                    {{ old('description') }}
-                </textarea>
+                <textarea required name="description"
+                    class="textarea {{ $errors->has('description') ? 'is-danger' : '' }}"
+                >{{ old('description') }}</textarea>
             </div>
         </div>
         <div class="field">

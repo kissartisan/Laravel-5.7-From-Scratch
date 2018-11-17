@@ -3,6 +3,8 @@
 @section('content')
     <h1 class="title">Edit Project</h1>
 
+    @include('errors')
+
     <form method="POST" action="/projects/{{ $project->getKey() }}" style="margin-bottom: 1em;">
         @csrf
         @method('PATCH')
