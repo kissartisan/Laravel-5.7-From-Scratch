@@ -1,10 +1,10 @@
 @component('mail::message')
-# Project created: {{ $project->title }}
+# New Project: {{ $project->title }}
 
 {{ $project->description }}
 
 @component('mail::button', ['url' => url('/projects/' . $project->getKey())])
-Button Text
+View Project
 @endcomponent
 
 Thanks,<br>
