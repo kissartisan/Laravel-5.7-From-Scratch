@@ -2,10 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Mail\ProjectCreated;
 use App\Project;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Mail;
 
 class ProjectsController extends Controller
 {
